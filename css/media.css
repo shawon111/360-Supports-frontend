@@ -1,0 +1,1221 @@
+/********** Extra Small devices  ************/
+@media (max-width: 575.98px) {
+    /*********** Home Page Media CSS Start ***********/
+    /* #home-banner{
+        margin-top: 70px;
+    } */
+    #nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    #menu .toggle{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .toggle {
+        padding-left: 50px !important;
+        padding-top: 10px !important;
+        margin-bottom: 0px;
+    }
+
+    .toggle img {
+        width: 25%;
+        font-size: 0px;
+    }
+
+
+    #menu .toggle-icon{
+        right: 10px;
+        text-align: left;
+    }
+
+    .slider,
+    .slide {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .slide .slide__img img {
+        max-width: 575.98px;
+        height: 100vh;
+    }
+
+    .slide .slide__content--headings .title {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .slide .slide__content--headings .text-two {
+        padding-left: 50px;
+        font-size: 24px;
+    }
+
+    .slide .slide__content--headings .top-title {
+        font-size: 24px;
+        font-weight: 400;
+        padding-left: 50px;
+    }
+
+    .slick-nav {
+        top: calc(58% - 44px);
+    }
+
+
+    .card .part1{
+        width: 80%;
+        margin: auto;
+    }
+
+    .card .part2{
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+
+
+    #review {
+        padding-bottom: 5px;
+    }
+
+    .review-content {
+        padding-bottom: 0px;
+    }
+
+
+    #review .card {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+
+    .link-social h2 {
+        font-size: 24px;
+    }
+
+    .link-social p {
+        font-size: 10px;
+    }
+
+    .link-social-icon i {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+    }
+
+    .link-left {
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+
+    .link-left .primary {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+    /*********** About Page Media CSS Start ***********/
+    .banner-img img {
+        height: 150px;
+        margin-top: 70px;
+    }
+
+    .banner-img-overlay h2 {
+        padding-left: 50px;
+        position: absolute;
+        bottom: -15%;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+    /*********** Services Page Media CSS Start ***********/
+    #services {
+        margin-bottom: 0px;
+    }
+
+    .services-content {
+        margin-left: 40px;
+    }
+
+    .services-content h2 {
+        font-size: 18px;
+    }
+
+    .services-content p {
+        font-size: 16px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .services-img {
+        margin-bottom: 50px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+    /*********** Career Page Media CSS Start ***********/
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+    /*********** Contact Page Media CSS Start ***********/
+    .contact-banner-img img {
+        margin-top: 70px;
+        height: 170px;
+    }
+
+    .contact-banner-img-overlay h3 {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 25px;
+        padding-top: 20%;
+    }
+
+    .contact-banner-img-overlay h4 {
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 100px;
+        visibility: hidden;
+      }
+
+      .contact-banner-img-overlay h2 {
+        font-size: 18px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 10%;
+      }
+
+      .contact-banner-img-overlay span{
+          visibility: hidden;
+      }
+
+      .contact-banner-img-overlay h6{
+          font-size: 18px;
+          padding-top: 25%;
+      }
+
+      #contact .contact-one {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+      #contact .contact-two {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+      #contact .contact-three {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+      #contact .contact-four {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+
+
+
+}
+
+/********** Small devices  ************/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /*********** Home Page Media CSS Start ***********/
+    #nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    #menu .toggle{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .toggle {
+        padding-left: 50px !important;
+        padding-top: 10px !important;
+        margin-bottom: 0px;
+    }
+
+    .toggle img {
+        width: 25%;
+        font-size: 0px;
+    }
+
+    .toggle-icon {
+        margin-right: 60px;
+    }
+
+    /* #home-banner{
+        margin-top: 70px;
+    } */
+
+    .slider,
+    .slide {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .slide .slide__img img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .slide .slide__content--headings .title {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .slide .slide__content--headings .text-two {
+        padding-left: 50px;
+        font-size: 24px;
+    }
+
+    .slide .slide__content--headings .top-title {
+        font-size: 24px;
+        font-weight: 400;
+        padding-left: 50px;
+    }
+
+    .slick-nav {
+        top: calc(58% - 44px);
+    }
+
+    #review {
+        padding-bottom: 5px;
+    }
+
+    .review-content {
+        padding-bottom: 0px;
+    }
+
+
+    #review .card {
+        margin-bottom: 30px;
+    }
+
+    .link-social h2 {
+        font-size: 24px;
+    }
+
+    .link-social p {
+        font-size: 10px;
+    }
+
+    .link-social-icon i {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+    }
+
+    .link-left {
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+
+    .link-left .primary {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+
+    /*********** About Page Media CSS Start ***********/
+    .banner-img img {
+        height: 150px;
+        margin-top: 70px;
+    }
+
+    .banner-img-overlay h2 {
+        padding-left: 50px;
+        position: absolute;
+        bottom: -15%;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+    /*********** Services Page Media CSS Start ***********/
+    #services {
+        margin-bottom: 0px;
+    }
+
+    .services-content {
+        margin-left: 40px;
+    }
+
+    .services-content h2 {
+        font-size: 18px;
+    }
+
+    .services-content p {
+        font-size: 16px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .services-img {
+        margin-bottom: 50px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+    /*********** Career Page Media CSS Start ***********/
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+    /*********** Contact Page Media CSS Start ***********/
+    .contact-banner-img img {
+        margin-top: 70px;
+        height: 170px;
+    }
+
+    .contact-banner-img-overlay h3 {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 25px;
+        padding-top: 20%;
+    }
+
+    .contact-banner-img-overlay h4 {
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 100px;
+        visibility: hidden;
+      }
+
+      .contact-banner-img-overlay h2 {
+        font-size: 18px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 10%;
+      }
+
+      .contact-banner-img-overlay span{
+          visibility: hidden;
+      }
+
+      .contact-banner-img-overlay h6{
+          font-size: 22px;
+          padding-top: 15%;
+      }
+
+      #contact .contact-one {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+      #contact .contact-two {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+      #contact .contact-three {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+      #contact .contact-four {
+        width: 80%;
+        margin: auto;
+        border-radius: 0;
+        margin-bottom: 30px;
+      }
+
+
+
+
+
+
+}
+
+
+/********** Medium devices  ************/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /*********** Home Page Media CSS Start ***********/
+    #nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+
+    #menu .toggle{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .toggle {
+        padding-left: 50px !important;
+        padding-top: 10px !important;
+        margin-bottom: 0px;
+    }
+
+    .toggle img {
+        width: 25%;
+        font-size: 0px;
+    }
+
+    .toggle-icon {
+        margin-right: 60px;
+    }
+
+    /* #home-banner{
+        margin-top: 70px;
+    } */
+
+    .slider,
+    .slide {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .slide .slide__img img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .slide .slide__content--headings .title {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .slide .slide__content--headings .text-two {
+        padding-left: 50px;
+        font-size: 24px;
+    }
+
+    .slide .slide__content--headings .top-title {
+        font-size: 24px;
+        font-weight: 400;
+        padding-left: 50px;
+    }
+
+    .slick-nav {
+        top: calc(58% - 44px);
+    }
+
+    #review {
+        padding-bottom: 5px;
+    }
+
+    .review-content {
+        padding-bottom: 0px;
+    }
+
+
+    #review .card {
+        margin-bottom: 30px;
+    }
+
+    .link-social h2 {
+        font-size: 24px;
+    }
+
+    .link-social p {
+        font-size: 10px;
+    }
+
+    .link-social-icon i {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+    }
+
+    .link-left {
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+
+    .link-left .primary {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+    /*********** About Page Media CSS Start ***********/
+    .banner-img img {
+        height: 150px;
+        margin-top: 70px;
+    }
+
+    .banner-img-overlay h2 {
+        padding-left: 50px;
+        position: absolute;
+        bottom: -15%;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+    /*********** Services Page Media CSS Start ***********/
+    #services {
+        margin-bottom: 0px;
+    }
+
+    .services-content {
+        margin-left: 40px;
+    }
+
+    .services-content h2 {
+        font-size: 18px;
+    }
+
+    .services-content p {
+        font-size: 16px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .services-img {
+        margin-bottom: 50px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+    /*********** Career Page Media CSS Start ***********/
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+    /*********** Contact Page Media CSS Start ***********/
+    .contact-banner-img img {
+        margin-top: 70px;
+        height: 170px;
+    }
+
+    .contact-banner-img-overlay h3 {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 25px;
+        padding-top: 20%;
+    }
+
+    .contact-banner-img-overlay h4 {
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 100px;
+        visibility: hidden;
+      }
+
+      .contact-banner-img-overlay h2 {
+        font-size: 18px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 10%;
+      }
+
+      .contact-banner-img-overlay span{
+          visibility: visible;
+          padding-left: 130px;
+      }
+
+      .contact-banner-img-overlay h6{
+          font-size: 22px;
+          padding: 0 50px;
+          padding-top: 15%;
+      }
+      .google-map{
+          margin-top: 30px;
+      }
+
+
+
+
+
+}
+
+
+/********** Large devices  ************/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*********** Home Page Media CSS Start ***********/
+    #nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    #menu .toggle{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .toggle {
+        padding-left: 50px !important;
+        padding-top: 10px !important;
+        margin-bottom: 0px;
+    }
+
+    .toggle img {
+        width: 25%;
+        font-size: 0px;
+    }
+
+    .toggle-icon {
+        margin-right: 60px;
+    }
+
+    .slider,
+    .slide {
+        height: 100vh;
+    }
+
+    .slide .slide__img img {
+        width: 100%;
+    }
+
+    .slide .slide__content--headings .title {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .slide .slide__content--headings .text-two {
+        padding-left: 50px;
+        font-size: 24px;
+    }
+
+    .slide .slide__content--headings .top-title {
+        font-size: 24px;
+        font-weight: 400;
+        padding-left: 50px;
+    }
+
+    .slick-nav {
+        top: calc(58% - 44px);
+    }
+
+    #review {
+        padding-bottom: 5px;
+    }
+
+    .review-content {
+        padding-bottom: 0px;
+    }
+
+
+    #review .card {
+        margin-bottom: 30px;
+    }
+
+    .link-social h2 {
+        font-size: 24px;
+    }
+
+    .link-social p {
+        font-size: 10px;
+    }
+
+    .link-social-icon i {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+    }
+
+    .link-left {
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+
+    .link-left .primary {
+        font-size: 12px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+    /*********** About Page Media CSS Start ***********/
+    .banner-img img {
+        height: 150px;
+        margin-top: 70px;
+    }
+
+    .banner-img-overlay h2 {
+        padding-left: 50px;
+        position: absolute;
+        bottom: -15%;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+    /*********** Services Page Media CSS Start ***********/
+    #services {
+        margin-bottom: 0px;
+    }
+
+    .services-content {
+        margin-left: 40px;
+    }
+
+    .services-content h2 {
+        font-size: 18px;
+    }
+
+    .services-content p {
+        font-size: 16px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .services-img {
+        margin-bottom: 50px;
+    }
+
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+
+
+    /*********** Career Page Media CSS Start ***********/
+    .footer-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-content a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo-one img {
+        width: 150px;
+    }
+
+    .footer-logo span {
+        padding-right: 0px;
+    }
+
+
+    /*********** Contact Page Media CSS Start ***********/
+    .contact-banner-img img {
+        margin-top: 70px;
+        height: 170px;
+    }
+
+    .contact-banner-img-overlay h3 {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 25px;
+        padding-top: 20%;
+    }
+
+    .contact-banner-img-overlay h4 {
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 100px;
+        visibility: hidden;
+      }
+
+      .contact-banner-img-overlay h2 {
+        font-size: 18px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 10%;
+      }
+
+      
+
+      .google-map{
+        margin-top: 30px;
+    }
+
+
+
+
+
+}
+
+
+
+/********** Extra large devices  ************/
+
+@media (min-width: 1200px) {
+    /*********** Home Page Media CSS Start ***********/
+    #nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    #menu .toggle{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .toggle {
+        padding-left: 50px !important;
+        padding-top: 10px !important;
+        margin-bottom: 0px;
+    }
+
+    .toggle img {
+        width: 25%;
+        font-size: 0px;
+    }
+
+    .toggle-icon {
+        margin-right: 60px;
+    }
+
+    .slider,
+    .slide {
+        height: 100vh;
+    }
+
+    .slide .slide__img img {
+        width: 100%;
+    }
+    
+
+    .slick-nav {
+        top: calc(58% - 44px);
+    }
+
+    #review {
+        padding-bottom: 5px;
+    }
+
+    .review-content {
+        padding-bottom: 0px;
+    }
+
+
+    #review .card {
+        margin-bottom: 30px;
+    }
+
+
+
+
+}
