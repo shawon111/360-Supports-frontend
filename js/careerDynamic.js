@@ -22,7 +22,6 @@ console.log("hitted",benefitsDesc.innerHTML)
 
 const handleCareerInfo = (data) => {
     if (data._id) {
-        console.log("i am here")
         careerTitle.innerText = data.pageTitle;
         careerDesc.innerHTML = `<p>${data.pageDesc}</p>`;
         responsibilityTitle.innerText = data.teleMarketResponsobilityTitle;
@@ -39,11 +38,10 @@ const handleCareerInfo = (data) => {
         mailUsMail.innerText = data.emailAddress;
         mailSubjectDesc.innerText = data.mailSubjectTitle;
         mailSubject.innerText = data.mailSubjectDetail;
-        console.log("i am complete")
     }
 }
 
-fetch('http://localhost:5000/career-info')
+fetch('https://support-api.onrender.com/career-info')
     .then(res => res.json())
     .then(data=> {
         // console.log(data)
@@ -60,7 +58,7 @@ fetch('http://localhost:5000/career-info')
     const sidebarPhone = document.getElementById('sidebar-phone');
     const sidebarMail = document.getElementById('sidebar-mail');
 
-    fetch('http://localhost:5000/career-sidebar')
+    fetch('https://support-api.onrender.com/career-sidebar')
     .then(res=> res.json())
     .then(data=> {
         if(data._id){
@@ -75,5 +73,3 @@ fetch('http://localhost:5000/career-info')
     })
 
 // career page end
-
-console.log("careerDynamic js operation completed successfully")
