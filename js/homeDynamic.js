@@ -7,7 +7,7 @@ const sliderThree = document.getElementById('dynamic_slide_three');
 const sliderFour = document.getElementById('dynamic_slide_four');
 const sliderFive = document.getElementById('dynamic_slide_five');
 
-fetch('http://localhost:5000/slider')
+fetch('https://support-api.onrender.com/slider')
     .then(res => res.json())
     .then(data => {
         if (data.length) {
@@ -41,7 +41,7 @@ const handleFeatures = (data) => {
     }
 }
 
-fetch('http://localhost:5000/features')
+fetch('https://support-api.onrender.com/features')
     .then(res => res.json())
     .then(data => {
         handleFeatures(data)
@@ -60,7 +60,7 @@ const handlesectionTitle = (data, titleElement, sectionName) => {
     }
 }
 
-fetch('http://localhost:5000/titles')
+fetch('https://support-api.onrender.com/titles')
     .then(res => res.json())
     .then(data => {
         handlesectionTitle(data, reviewSectionTitle, "review")
@@ -80,7 +80,7 @@ const handleReview = (data) => {
     }
 }
 
-fetch('http://localhost:5000/review')
+fetch('https://support-api.onrender.com/review')
     .then(res => res.json())
     .then(data => {
         handleReview(data)
@@ -90,7 +90,7 @@ fetch('http://localhost:5000/review')
 const agentNumber = document.getElementById('agent-number');
 const agentContactTitle = document.getElementById('agent-contact-title');
 
-fetch('http://localhost:5000/contact-agent')
+fetch('https://support-api.onrender.com/contact-agent')
     .then(res => res.json())
     .then(data => {
         if (data.length) {
@@ -101,58 +101,4 @@ fetch('http://localhost:5000/contact-agent')
 
 // homepage end
 
-// career page start
-
-// // career info
-const careerTitle = document.getElementById('career-title');
-const careerDesc = document.getElementById('career-desc');
-const responsibilityTitle = document.getElementById('responsibility-title');
-const responsibilityDesc = document.getElementById('responsibility-desc');
-const requireTitle = document.getElementById('require-title');
-const requireDesc = document.getElementById('require-desc');
-const locationTitle = document.getElementById('loction-title');
-const locationAddress = document.getElementById('location-address');
-const salaryTitle = document.getElementById('salary-title');
-const salaryAmount = document.getElementById('salary-amount');
-const benefitsTitle = document.getElementById('benefits-title');
-const benefitsDesc = document.getElementById('benefits-desc');
-const mailUsTitle = document.getElementById('mailus-title');
-const mailUsMail = document.getElementById('mailus-mail');
-const mailSubjectDesc = document.getElementById('mail-subject-desc');
-const mailSubject = document.getElementById('mail-subject');
-
-console.log("hitted",benefitsDesc.innerHTML)
-
-const handleCareerInfo = (data) => {
-    if (data._id) {
-        console.log("i am here")
-        careerTitle.innerText = data.pageTitle;
-        careerDesc.innerHTML = `<p>${data.pageDesc}</p>`;
-        responsibilityTitle.innerText = data.teleMarketResponsobilityTitle;
-        responsibilityDesc.innerHTML = data.teleMarketResponsobilities;
-        requireTitle.innerText = data.teleMarketrequireTitle;
-        requireDesc.innerHTML = data.teleMarketrequirements;
-        locationTitle.innerText = data.locationTitle;
-        locationAddress.innerText = data.locationAddress;
-        salaryTitle.innerText = data.salaryTitle;
-        salaryAmount.innerText = data.salaryAmount;
-        benefitsTitle.innerText = data.benefitsTitle;
-        benefitsDesc.innerHTML = data.benefitsDesc;
-        mailUsTitle.innerText = data.emailTitle;
-        mailUsMail.innerText = data.emailAddress;
-        mailSubjectDesc.innerText = data.mailSubjectTitle;
-        mailSubject.innerText = data.mailSubjectDetail;
-        console.log("i am complete")
-    }
-}
-
-fetch('http://localhost:5000/career-info')
-    .then(res => res.json())
-    .then(data=> {
-        // console.log(data)
-        handleCareerInfo(data)
-    })
-
-// career page end
-
-console.log("Dynamic js operation completed successfully")
+console.log("homeDynamic js operation completed successfully")
