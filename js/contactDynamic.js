@@ -9,17 +9,29 @@ const optionThreeDesc = document.getElementById('option-three-desc');
 const optionFourDesc = document.getElementById('option-four-desc');
 
 fetch('https://support-api.onrender.com/contact')
-.then(res=> res.json())
-.then(data=> {
-    if(data._id){
-        contactTitle.innerHTML = data.contactTitle;
-        optionOneTitle.innerText = data.optionOneTitle;
-        optionTwoTitle.innerText = data.optionTwoTitle;
-        optionThreeTitle.innerText = data.optionThreeTitle;
-        optionFourTitle.innerText = data.optionFourTitle;
-        optionOneDesc.innerHTML = data.optionOnedesc;
-        optionTwoDesc.innerHTML = data.optionTwoDesc;
-        optionThreeDesc.innerHTML = data.optionThreedesc;
-        optionFourDesc.innerHTML = data.optionFourdesc;
-    }
-})
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
+            contactTitle.innerHTML = data.contactTitle;
+            optionOneTitle.innerText = data.optionOneTitle;
+            optionTwoTitle.innerText = data.optionTwoTitle;
+            optionThreeTitle.innerText = data.optionThreeTitle;
+            optionFourTitle.innerText = data.optionFourTitle;
+            optionOneDesc.innerHTML = data.optionOnedesc;
+            optionTwoDesc.innerHTML = data.optionTwoDesc;
+            optionThreeDesc.innerHTML = data.optionThreedesc;
+            optionFourDesc.innerHTML = data.optionFourdesc;
+        }
+    });
+
+const agentNumber = document.getElementById('agent-number');
+const agentContactTitle = document.getElementById('agent-contact-title');
+
+fetch('http://localhost:5000/contact-agent')
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
+            agentNumber.innerText = `${data.number}`;
+            agentContactTitle.innerText = `${data.title}`;
+        }
+    })

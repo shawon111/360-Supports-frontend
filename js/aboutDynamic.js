@@ -29,17 +29,17 @@ const featureDescTwo = document.getElementById('feature-description-two');
 const featureDescThree = document.getElementById('feature-description-three');
 
 const handleFeatures = (data) => {
-    if (data.length) {
-        featureTitleOne.innerHTML = `<h3>${data[0].title}</h3>`;
-        featureTitleTwo.innerHTML = `<h3>${data[1].title}</h3>`;
-        featureTitleThree.innerHTML = `<h3>${data[2].title}</h3>`;
-        featureDescOne.innerHTML = `<p>${data[0].desc}</p>`;
-        featureDescTwo.innerHTML = `<p>${data[1].desc}</p>`;
-        featureDescThree.innerHTML = `<p>${data[2].desc}</p>`;
+    if (data._id) {
+        featureTitleOne.innerHTML = `<h3>${data.titleOne}</h3>`;
+        featureTitleTwo.innerHTML = `<h3>${data.titleTwo}</h3>`;
+        featureTitleThree.innerHTML = `<h3>${data.titleThree}</h3>`;
+        featureDescOne.innerHTML = `<p>${data.descOne}</p>`;
+        featureDescTwo.innerHTML = `<p>${data.descTwo}</p>`;
+        featureDescThree.innerHTML = `<p>${data.descThree}</p>`;
     }
 }
 
-fetch('https://support-api.onrender.com/features')
+fetch('http://localhost:5000/features')
     .then(res => res.json())
     .then(data => {
         handleFeatures(data)

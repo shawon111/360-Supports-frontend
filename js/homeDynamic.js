@@ -7,15 +7,15 @@ const sliderThree = document.getElementById('dynamic_slide_three');
 const sliderFour = document.getElementById('dynamic_slide_four');
 const sliderFive = document.getElementById('dynamic_slide_five');
 
-fetch('https://support-api.onrender.com/slider')
+fetch('http://localhost:5000/slider')
     .then(res => res.json())
     .then(data => {
-        if (data.length) {
-            sliderOne.innerText = data[0].title;
-            sliderTwo.innerText = data[1].title;
-            sliderThree.innerText = data[2].title;
-            sliderFour.innerText = data[3].title;
-            sliderFive.innerText = data[4].title;
+        if (data._id) {
+            sliderOne.innerHTML = data.titleOne;
+            sliderTwo.innerHTML = data.titleTwo;
+            sliderThree.innerHTML = data.titleThree;
+            sliderFour.innerHTML = data.titleFour;
+            sliderFive.innerHTML = data.titleFive;
         } else {
             return
         }
@@ -31,17 +31,17 @@ const featureDescTwo = document.getElementById('feature-description-two');
 const featureDescThree = document.getElementById('feature-description-three');
 
 const handleFeatures = (data) => {
-    if (data.length) {
-        featureTitleOne.innerHTML = `<h3>${data[0].title}</h3>`;
-        featureTitleTwo.innerHTML = `<h3>${data[1].title}</h3>`;
-        featureTitleThree.innerHTML = `<h3>${data[2].title}</h3>`;
-        featureDescOne.innerHTML = `<p>${data[0].desc}</p>`;
-        featureDescTwo.innerHTML = `<p>${data[1].desc}</p>`;
-        featureDescThree.innerHTML = `<p>${data[2].desc}</p>`;
+    if (data._id) {
+        featureTitleOne.innerHTML = `<h3>${data.titleOne}</h3>`;
+        featureTitleTwo.innerHTML = `<h3>${data.titleTwo}</h3>`;
+        featureTitleThree.innerHTML = `<h3>${data.titleThree}</h3>`;
+        featureDescOne.innerHTML = `<p>${data.descOne}</p>`;
+        featureDescTwo.innerHTML = `<p>${data.descTwo}</p>`;
+        featureDescThree.innerHTML = `<p>${data.descThree}</p>`;
     }
 }
 
-fetch('https://support-api.onrender.com/features')
+fetch('http://localhost:5000/features')
     .then(res => res.json())
     .then(data => {
         handleFeatures(data)
@@ -54,33 +54,32 @@ const reviewThree = document.getElementById('review-three');
 const reviewSectionTitle = document.getElementById('review-title');
 
 const handlesectionTitle = (data, titleElement, sectionName) => {
-    if (data.length) {
-        const findTitle = data.find(item => item.section === sectionName);
-        titleElement.innerHTML = `<h2>${findTitle.title}</h2>`
+    if (data._id) {
+        titleElement.innerHTML = `<h2>${data.title}</h2>`
     }
 }
 
-fetch('https://support-api.onrender.com/titles')
+fetch('http://localhost:5000/titles')
     .then(res => res.json())
     .then(data => {
         handlesectionTitle(data, reviewSectionTitle, "review")
     })
 
 const handleReview = (data) => {
-    if (data.length) {
-        reviewOne.innerHTML = `<img src="${data[0].imgUrl}" alt="">
-        <h3>${data[0].name}</h3>
-        <p>${data[0].review}</p>`;
-        reviewTwo.innerHTML = `<img src="${data[1].imgUrl}" alt="">
-        <h3>${data[1].name}</h3>
-        <p>${data[1].review}</p>`;
-        reviewThree.innerHTML = `<img src="${data[2].imgUrl}" alt="">
-        <h3>${data[2].name}</h3>
-        <p>${data[2].review}</p>`;
+    if (data._id) {
+        reviewOne.innerHTML = `<img src="${data.imgUrlOne}" alt="">
+        <h3>${data.nameOne}</h3>
+        <p>${data.reviewOne}</p>`;
+        reviewTwo.innerHTML = `<img src="${data.imgUrlTwo}" alt="">
+        <h3>${data.nameTwo}</h3>
+        <p>${data.reviewTwo}</p>`;
+        reviewThree.innerHTML = `<img src="${data.imgUrlThree}" alt="">
+        <h3>${data.nameThree}</h3>
+        <p>${data.reviewThree}</p>`;
     }
 }
 
-fetch('https://support-api.onrender.com/review')
+fetch('http://localhost:5000/review')
     .then(res => res.json())
     .then(data => {
         handleReview(data)
@@ -90,12 +89,12 @@ fetch('https://support-api.onrender.com/review')
 const agentNumber = document.getElementById('agent-number');
 const agentContactTitle = document.getElementById('agent-contact-title');
 
-fetch('https://support-api.onrender.com/contact-agent')
+fetch('http://localhost:5000/contact-agent')
     .then(res => res.json())
     .then(data => {
-        if (data.length) {
-            agentNumber.innerText = `${data[0].number}`;
-            agentContactTitle.innerText = `${data[0].title}`;
+        if (data._id) {
+            agentNumber.innerText = `${data.number}`;
+            agentContactTitle.innerText = `${data.title}`;
         }
     })
 
