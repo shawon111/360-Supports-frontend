@@ -39,7 +39,7 @@ fetch('https://support-api.onrender.com/contact-agent')
 // // social links
 const facebook = document.getElementById('facebook-link');
 const linkedIn = document.getElementById('linkedin-link');
-fetch('http://localhost:5000/social-links')
+fetch('https://support-api.onrender.com/social-links')
     .then(res => res.json())
     .then(data => {
         if (data._id) {
@@ -50,7 +50,7 @@ fetch('http://localhost:5000/social-links')
 
 // // map
 const map = document.getElementById('contact-map')
-fetch('http://localhost:5000/maps')
+fetch('https://support-api.onrender.com/maps')
     .then(res => res.json())
     .then(data => {
         if (data._id) {

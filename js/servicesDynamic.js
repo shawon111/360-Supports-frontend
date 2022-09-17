@@ -25,7 +25,7 @@ const iconOne = document.getElementById('icon-one');
 const iconTwo = document.getElementById('icon-two');
 const iconThree = document.getElementById('icon-three');
 
-fetch('http://localhost:5000/service-icons')
+fetch('https://support-api.onrender.com/service-icons')
 .then(res=> res.json())
 .then(data=> {
     const processClassList = (list) => {

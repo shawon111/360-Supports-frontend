@@ -1,6 +1,6 @@
 // logo
 const siteLogo = document.getElementById('site-logo')
-fetch('http://localhost:5000/images')
+fetch('https://support-api.onrender.com/images')
     .then(res => res.json())
     .then(data => {
         if (data._id) {

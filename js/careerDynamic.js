@@ -74,7 +74,7 @@ fetch('https://support-api.onrender.com/career-sidebar')
 
 // //map
 const map = document.getElementById('career-map')
-fetch('http://localhost:5000/maps')
+fetch('https://support-api.onrender.com/maps')
     .then(res => res.json())
     .then(data => {
         if (data._id) {
@@ -84,7 +84,7 @@ fetch('http://localhost:5000/maps')
 
 // //career logo
 const careerLogo = document.getElementById('career-logo')
-fetch('http://localhost:5000/images')
+fetch('https://support-api.onrender.com/images')
     .then(res => res.json())
     .then(data => {
         if (data._id) {
