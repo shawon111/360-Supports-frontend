@@ -18,7 +18,7 @@ const mailUsMail = document.getElementById('mailus-mail');
 const mailSubjectDesc = document.getElementById('mail-subject-desc');
 const mailSubject = document.getElementById('mail-subject');
 
-console.log("hitted",benefitsDesc.innerHTML)
+console.log("hitted", benefitsDesc.innerHTML)
 
 const handleCareerInfo = (data) => {
     if (data._id) {
@@ -43,25 +43,25 @@ const handleCareerInfo = (data) => {
 
 fetch('https://support-api.onrender.com/career-info')
     .then(res => res.json())
-    .then(data=> {
+    .then(data => {
         // console.log(data)
         handleCareerInfo(data)
     })
 
 // // career sidebar
 
-    const sidebarCountry = document.getElementById('sidebar-country');
-    const officeAddTitle = document.getElementById('office-address-title');
-    const officeAddDesc = document.getElementById('office-address-desc');
-    const officeHourTitle = document.getElementById('office-hour-title');
-    const officeHourDesc = document.getElementById('office-hour-desc');
-    const sidebarPhone = document.getElementById('sidebar-phone');
-    const sidebarMail = document.getElementById('sidebar-mail');
+const sidebarCountry = document.getElementById('sidebar-country');
+const officeAddTitle = document.getElementById('office-address-title');
+const officeAddDesc = document.getElementById('office-address-desc');
+const officeHourTitle = document.getElementById('office-hour-title');
+const officeHourDesc = document.getElementById('office-hour-desc');
+const sidebarPhone = document.getElementById('sidebar-phone');
+const sidebarMail = document.getElementById('sidebar-mail');
 
-    fetch('https://support-api.onrender.com/career-sidebar')
-    .then(res=> res.json())
-    .then(data=> {
-        if(data._id){
+fetch('https://support-api.onrender.com/career-sidebar')
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
             sidebarCountry.innerText = data.sidebarCountryName;
             officeAddTitle.innerText = data.officeAddressTitle;
             officeAddDesc.innerText = data.officeAddressDesc;
@@ -69,6 +69,26 @@ fetch('https://support-api.onrender.com/career-info')
             officeHourDesc.innerHTML = data.officeHoursDesc;
             sidebarPhone.innerHTML = `<span>P :</span> ${data.sidebarPhone}`;
             sidebarMail.innerHTML = `E :</span> ${data.sidebarEmail}`;
+        }
+    })
+
+// //map
+const map = document.getElementById('career-map')
+fetch('http://localhost:5000/maps')
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
+            map.src = data.career;
+        }
+    })
+
+// //career logo
+const careerLogo = document.getElementById('career-logo')
+fetch('http://localhost:5000/images')
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
+            careerLogo.src = data.careerLogo;
         }
     })
 

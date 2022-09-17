@@ -35,3 +35,25 @@ fetch('https://support-api.onrender.com/contact-agent')
             agentContactTitle.innerText = `${data.title}`;
         }
     })
+
+// // social links
+const facebook = document.getElementById('facebook-link');
+const linkedIn = document.getElementById('linkedin-link');
+fetch('http://localhost:5000/social-links')
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
+            facebook.href = data.facebook;
+            linkedIn.href = data.linkedin;
+        }
+    })
+
+// // map
+const map = document.getElementById('contact-map')
+fetch('http://localhost:5000/maps')
+    .then(res => res.json())
+    .then(data => {
+        if (data._id) {
+            map.src = data.contact;
+        }
+    })

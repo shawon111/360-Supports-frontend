@@ -18,3 +18,24 @@ fetch('https://support-api.onrender.com/services')
         serviceThreeDesc.innerHTML = data.serviceThreedesc;
     }
 })
+
+// //service icons
+
+const iconOne = document.getElementById('icon-one');
+const iconTwo = document.getElementById('icon-two');
+const iconThree = document.getElementById('icon-three');
+
+fetch('http://localhost:5000/service-icons')
+.then(res=> res.json())
+.then(data=> {
+    const processClassList = (list) => {
+        const listArray = list.split(",");
+        return listArray;
+    }
+    if(data._id){
+        iconOne.classList.add(processClassList(data.serviceOneIcon)[0], processClassList(data.serviceOneIcon)[1]);
+        iconTwo.classList.add(processClassList(data.serviceTwoIcon)[0], processClassList(data.serviceTwoIcon)[1]);
+        iconThree.classList.add(processClassList(data.serviceThreeIcon)[0], processClassList(data.serviceThreeIcon)[1]);
+        // console.log(processClassList(data.serviceOneIcon))
+    }
+})
