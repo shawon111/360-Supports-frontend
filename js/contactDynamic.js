@@ -27,7 +27,7 @@ fetch('https://support-api.onrender.com/contact')
 const agentNumber = document.getElementById('agent-number');
 const agentContactTitle = document.getElementById('agent-contact-title');
 
-fetch('http://localhost:5000/contact-agent')
+fetch('https://support-api.onrender.com/contact-agent')
     .then(res => res.json())
     .then(data => {
         if (data._id) {

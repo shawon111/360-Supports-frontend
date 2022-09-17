@@ -7,7 +7,7 @@ const sliderThree = document.getElementById('dynamic_slide_three');
 const sliderFour = document.getElementById('dynamic_slide_four');
 const sliderFive = document.getElementById('dynamic_slide_five');
 
-fetch('http://localhost:5000/slider')
+fetch('https://support-api.onrender.com/slider')
     .then(res => res.json())
     .then(data => {
         if (data._id) {
@@ -41,7 +41,7 @@ const handleFeatures = (data) => {
     }
 }
 
-fetch('http://localhost:5000/features')
+fetch('https://support-api.onrender.com/features')
     .then(res => res.json())
     .then(data => {
         handleFeatures(data)
@@ -59,7 +59,7 @@ const handlesectionTitle = (data, titleElement, sectionName) => {
     }
 }
 
-fetch('http://localhost:5000/titles')
+fetch('https://support-api.onrender.com/titles')
     .then(res => res.json())
     .then(data => {
         handlesectionTitle(data, reviewSectionTitle, "review")
@@ -79,7 +79,7 @@ const handleReview = (data) => {
     }
 }
 
-fetch('http://localhost:5000/review')
+fetch('https://support-api.onrender.com/review')
     .then(res => res.json())
     .then(data => {
         handleReview(data)
@@ -89,7 +89,7 @@ fetch('http://localhost:5000/review')
 const agentNumber = document.getElementById('agent-number');
 const agentContactTitle = document.getElementById('agent-contact-title');
 
-fetch('http://localhost:5000/contact-agent')
+fetch('https://support-api.onrender.com/contact-agent')
     .then(res => res.json())
     .then(data => {
         if (data._id) {

@@ -39,7 +39,7 @@ const handleFeatures = (data) => {
     }
 }
 
-fetch('http://localhost:5000/features')
+fetch('https://support-api.onrender.com/features')
     .then(res => res.json())
     .then(data => {
         handleFeatures(data)
