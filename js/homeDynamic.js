@@ -67,13 +67,13 @@ fetch('https://support-api.onrender.com/titles')
 
 const handleReview = (data) => {
     if (data._id) {
-        reviewOne.innerHTML = `<img src="${data.imgUrlOne}" alt="">
+        reviewOne.innerHTML = `<img src="https://support-api.onrender.com/${data.imgUrlOne}" alt="">
         <h3>${data.nameOne}</h3>
         <p>${data.reviewOne}</p>`;
-        reviewTwo.innerHTML = `<img src="${data.imgUrlTwo}" alt="">
+        reviewTwo.innerHTML = `<img src="https://support-api.onrender.com/${data.imgUrlTwo}" alt="">
         <h3>${data.nameTwo}</h3>
         <p>${data.reviewTwo}</p>`;
-        reviewThree.innerHTML = `<img src="${data.imgUrlThree}" alt="">
+        reviewThree.innerHTML = `<img src="https://support-api.onrender.com/${data.imgUrlThree}" alt="">
         <h3>${data.nameThree}</h3>
         <p>${data.reviewThree}</p>`;
     }
