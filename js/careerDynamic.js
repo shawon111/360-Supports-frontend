@@ -78,7 +78,7 @@ fetch('https://support-api.onrender.com/maps')
     .then(res => res.json())
     .then(data => {
         if (data._id) {
-            map.src = data.career;
+            map.src =  data.career;
         }
     })
 
@@ -88,7 +88,7 @@ fetch('https://support-api.onrender.com/images')
     .then(res => res.json())
     .then(data => {
         if (data._id) {
-            careerLogo.src = data.careerLogo;
+            careerLogo.src = `https://support-api.onrender.com/${data.careerLogo}`;
         }
     })
 
